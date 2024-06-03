@@ -49,7 +49,6 @@ if __name__ == '__main__':
 Inserting Elements in a Sorted Array
 """
 def insertSorted(arr, n, key, capacity):
-
     # Cannot insert more elements if n is
     # already more than or equal to capacity
     if (n >= capacity):
@@ -61,7 +60,6 @@ def insertSorted(arr, n, key, capacity):
         i -= 1
 
     arr[i + 1] = key
-
     return (n + 1)
 
 
@@ -76,13 +74,12 @@ if __name__ == "__main__":
     n = 6
     key = 26
 
-    print("Before Insertion: ", end=" ")
+
     for i in range(n):
-        print(arr[i], end=" ")
+        print("Before Inserting", arr[i], end=" ")
 
     # Function call
     n = insertSorted(arr, n, key, capacity)
 
-    print("\nAfter Insertion: ", end=" ")
     for i in range(n):
-        print(arr[i], end=" ")
+        print("After Inserting", arr[i], end=" ")
